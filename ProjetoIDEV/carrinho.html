@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARRINHO</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="/ProjetoIDEV/css/style.css">
+</head>
+
+<body>
+    <div class="container-pop-up-carr" id="divCarrinho">
+        <div class="espaco-carr">
+            <div class="tit-carr-pop">
+                <h1>SEU CARRINHO</h1>
+            </div>
+            <div class="espaco-table-pop">
+                <div class="tabela-car-pop">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Produto</th>
+                                <th>Preço</th>
+                                <th>Quantidade</th>
+                                <th>Total</th>
+                                <th>-</th>
+                            </tr>
+                        </thead>
+                        <tbody id="carrinho">
+                           
+                            <tr>
+                                <td>
+                                    <div class="img-pop-carr">
+                                        <img src="https://picsum.photos/200/300" alt="">
+
+                                        <div class="name-pop-carr">
+                                            <h1>NOME PRODUTO</h1>
+                                            <div class="Categoria">
+                                                <h2>Categoria</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>R$xxxxxx</td>
+                                <td>
+                                    <div class="qtd-carr-pop">
+                                        <button>-</button>
+                                        <span>2</span>
+                                        <button>+</button>
+                                    </div>
+                                </td>
+                                <td>R$xxxxxx</td>
+                                <td class="Exclusao-pop-carr">
+                                    <button>
+                                        <i class='bx bx-x' alt="Exclusão"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+            <div class="container-btn-carr-pop">
+                <a href=""><button >
+                        CONTINUAR
+                    </button>
+                </a>
+            </div>
+        </div>
+<button id="adicionarBotao">Add</button>
+    </div>
+    
+</body>
+<script src="testCarrinho.js"></script>r
+</html>

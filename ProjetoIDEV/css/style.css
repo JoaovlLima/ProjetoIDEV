@@ -1,0 +1,594 @@
+body {
+    margin: 0;
+z-index: 1;
+    color: #fffff2;
+ 
+}
+
+
+/* HEADER */
+.heading {
+    width: 100%;
+    height: 3vh;
+
+    background-color: #FE9000;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.heading img {
+    margin-left: 2vh;
+    width: 2.5vh;
+    height: 2.5vh;
+}
+
+.navbar {
+    width: 100%;
+    height: 12vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #17183B;
+}
+
+.logo-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texto-nav {
+    width: 15%;
+}
+
+.navbar img {
+    width: 13vh;
+    height: 13vh;
+}
+
+/* INDEX */
+
+.carousel-inner img {
+    height: auto;
+}
+
+.tit-carr-meio {
+    color: #000;
+    font-family: Jomhuria;
+    /* VER COMO IMPORTAR FONT */
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tit-card-ind {
+    color: #000;
+    font-family: Jomhuria;
+    /* VER COMO IMPORTAR FONT */
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.espaco-card {
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    gap: 4%;
+
+    text-align: center;
+    /*     grid-template-areas: "topo topo" 
+                         "meio meio" 
+                         "baixo baixo";        */
+    width: 95%;
+    height: 75vh;
+
+
+}
+
+.espaco-card a {
+    text-decoration: none;
+    color: #fffff2;
+}
+
+.card1 {
+    background-image: url(/ProjetoIDEV/img/IMAGENSVARIADAS/_3666082a-8c6d-4d15-8fde-e5f89d6ddf5b.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 40px;
+
+    width: 100%;
+    height: 35vh;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2 {
+    background-image: url(/ProjetoIDEV/img/IDEV/Hamburgueres/Cheddar\ Duplo\ Crispy.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    border-radius: 40px;
+
+    width: 100%;
+    height: 35vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card3 {
+    background-image: url(/ProjetoIDEV/img/IDEV/Sobremesas/Shake\ Baunilha.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    border-radius: 40px;
+
+    width: 100%;
+    height: 35vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card4 {
+    background-image: url(/ProjetoIDEV/img/IMAGENSVARIADAS/_3666082a-8c6d-4d15-8fde-e5f89d6ddf5b.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 40px;
+
+    width: 100%;
+    height: 35vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card5 {
+    background-image: url(/ProjetoIDEV/img/IMAGENSVARIADAS/_3666082a-8c6d-4d15-8fde-e5f89d6ddf5b.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 40px;
+
+    width: 100%;
+    height: 35vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card6 {
+    background-image: url(/ProjetoIDEV/img/IMAGENSVARIADAS/_3666082a-8c6d-4d15-8fde-e5f89d6ddf5b.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 40px;
+
+    width: 100%;
+    height: 35vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    color: #fffff2;
+}
+
+.btn-card input {
+    width: 40vh;
+    height: 8vh;
+
+    border-radius: 20px;
+
+
+    font-size: 30px;
+    color: #fffff2;
+    background-color: #3A4864;
+}
+
+.carr-inf-ind img {
+    width: 100%;
+    height: auto;
+
+
+}
+
+/* PRODUTOS REDE */
+
+.banner-princ-prodrede {
+    background-image: url(/ProjetoIDEV/img/bannerFIQUEATENTO.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+    width: 100%;
+    height: 115vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.logo-rede-prod-rede {
+    background-color: #fffff2;
+    width: 32%;
+    height: 55vh;
+
+    margin-left: 50px;
+
+
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 1vh;
+    border-color: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-rede-prod-rede img {
+    width: 80%;
+    height: 55vh;
+}
+
+.tent-centr {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tit-meio-prodRede {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #000;
+    font-family: Jomhuria;
+    /* VER COMO IMPORTAR FONT */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+    width: 90%;
+
+}
+
+
+.filtro-prodRede {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    background-color: #F27A4D;
+
+
+    border-radius: 30 px;
+
+    width: 20%;
+    height: 10vh;
+}
+
+.filtro-prodRede input {
+    font-size: 5vh;
+    background: none;
+    border: none;
+}
+
+.filtro-prodRede a {
+    display: flex;
+    flex-direction: row-reverse;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtro-prodRede img {
+    width: 40%;
+    height: 6vh;
+}
+
+.container-cards-prod {
+    height: 120vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.espaco-card-prodRede {
+    height: 120vh;
+    width: 95%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 21%);
+    gap: 5%;
+
+    background-color: #fffff2;
+}
+
+.espaco-card-prodRede a {
+    width: 100%;
+    height: auto;
+}
+
+.espaco-card-prodRede img {
+    width: 100%;
+    height: 40vh;
+
+    border-radius: 40px;
+}
+
+.espaco-card-prodRede a {
+    color: #000;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.espaco-card-sobremesa-prodRede {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-sobremesa-prodRede {
+    height: 70vh;
+    width: 95%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 21%);
+    gap: 5%;
+
+    background-color: #fffff2;
+
+    margin-bottom: 50px;
+}
+
+.cards-sobremesa-prodRede img {
+    width: 100%;
+    height: 40vh;
+
+    border-radius: 40px;
+}
+
+.cards-sobremesa-prodRede a {
+    color: #000;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* CARRINHO */
+
+.container-pop-up-carr {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #3A4864;
+
+}
+
+.espaco-carr {
+    width: 85%;
+    height: 80vh;
+
+    background-color: #fffff2;
+
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    border-radius: 30px;
+
+    overflow: auto;
+}
+
+.tit-carr-pop {
+    display: flex;
+    justify-content: center;
+
+
+    color: #000;
+    font-family: Jomhuria;
+    /* VER COMO IMPORTAR FONT */
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.espaco-table-pop {
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tabela-car-pop {
+    height: auto;
+    width: 90%;
+}
+
+table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+}
+
+thead {
+    border-bottom: 9px;
+    color: #fffff2;
+}
+
+tr {
+
+    height: 6vh;
+    background-color: #fffff2;
+}
+
+th {
+    border-radius: 10px;
+    border-bottom: 90px;
+    background-color: #F27A4D;
+    font-size: 20px;
+}
+
+td {
+    justify-content: center;
+    border-bottom-style: solid;
+    border-width: 2px;
+    text-align: center;
+}
+
+.qtd-carr-pop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.qtd-carr-pop button {
+    background-color: #a3a3a3;
+    border-style: solid;
+    border-radius: 60px;
+}
+
+.img-pop-carr {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 12px;
+}
+
+.img-pop-carr img {
+    padding: 10px;
+    width: 18%;
+    height: 18vh;
+
+    border-radius: 30px;
+}
+
+
+.container-btn-carr-pop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+
+}
+
+.container-btn-carr-pop a {
+    width: 30%;
+    height: 8vh;
+}
+
+.container-btn-carr-pop button {
+    border-style: none;
+    height: 8vh;
+    width: 100%;
+    border-radius: 20px;
+
+    background-color: #FE9000;
+
+    color: #fffff2;
+}
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 30vh;
+
+    background-color: #17183B;
+}
+
+.espaco-foot {
+    width: 100%;
+    height: 25vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.contat-ind {
+    display: flex;
+
+}
+
+.contat-ind img {
+    width: 5vh;
+    height: 5vh;
+}
+
+.img-foot-logo img {
+    width: 30vh;
+    height: 30vh;
+}
+
+
+/*        */
+
+ 
+
+  
+  
