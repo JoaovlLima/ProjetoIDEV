@@ -12,13 +12,13 @@
 <body>
     <nav class="areaEmbacada" id="fundoEmbacado">
     <header>
-        <div class="heading">
+        <div class="heading" style="position: fixed;">
             <a href=""><img src="/ProjetoIDEV/img/Icons/facebook PNG.png" alt=""></a>
             <a href=""><img src="/ProjetoIDEV/img/Icons/whatsapp.png" alt=""></a>
             <a href=""><img src="/ProjetoIDEV/img/Icons/facebook.png" alt=""></a>
         </div>
 
-        <nav class="navbar">
+        <nav class="navbar" style="position: fixed;">
             <div class="logo-nav">
                 <img src="/ProjetoIDEV/img/Icons/t (1).png" alt="">
                 <img src="/ProjetoIDEV/img/Icons/t.png" alt="">
@@ -26,10 +26,14 @@
                     <a href="/ProjetoIDEV/index.html">HOME</a>
                     <a href="/ProjetoIDEV/prodGeral.html">PRODUTOS</a>
                     <a href="">CADASTRO</a>
-                    <button onclick="ativarCarrinho()"> Carrinho</button>
+                    
                     <a href="/ProjetoIDEV/faq.html">FAQ</a>
                 </div>
             </div>
+            
+            <img src="img/carrinho/4896266-ilustracao-em-sacola-de-compras-cheia-de-comida-e-bebida-gratis-vetor.jpg" 
+                        alt="" onclick="ativarCarrinho()" style="width: 50px;height: 50px;">
+                       
         </nav>
     </header>
 
@@ -201,14 +205,19 @@
                                     <img src="https://picsum.photos/200/300" alt="">
 
                                     <div class="name-pop-carr">
-                                        <ul id="lista-carrinho"></ul>
+                                        
+                                            <h2>nome</h2>
+                                       
                                         <div class="Categoria">
                                             <h2>Categoria</h2>
                                         </div>
                                     </div>
                                 </div>
                             </td>
-                            <td>R$xxxxxx</td>
+                            <td>
+                                <h2>preco</h2>
+                            
+                        </td>
                             <td>
                             <div class="quantity-container">
     <button class="quantity-button" id="decrease">-</button>
@@ -228,11 +237,8 @@
 
                 </table>
             </div>
-          <!--   <div id="carrinho">
-                <h2>Carrinho de Compras</h2>
-                <ul id="lista-carrinho"></ul>
-                <p>Total: <span id="total">R$ 0,00</span></p>
-            </div> -->
+        
+          
         </div>
         <div class="container-btn-carr-pop">
             <a href=""><button>
