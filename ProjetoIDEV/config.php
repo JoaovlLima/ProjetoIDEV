@@ -1,7 +1,7 @@
 <?php
 $dbHost = 'LocalHost';
 $dbUsername = 'root';
-$dbPassword = '';
+$dbPassword = '1234';
 $dbName = 'banco_de_dado_loja';
 
 $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);

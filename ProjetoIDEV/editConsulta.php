@@ -1,30 +1,27 @@
 <?php
 
-if(isset($_POST['submited']))
+
+if(!empty($_GET['ID']))
 {
   include_once('config.php');
+  $ID = $_GET['ID'];
+
+  $sqlSelect = "SELECT * FROM banco_de_dado_loja.produtos WHERE ID = $ID" ;
+  $result = $conexao->query($sqlSelect);
+  print_r($result);
+  if($result->num_rows>0){
+
+    while($user_data = mysqli_fetch_assoc($result))
+    {
+      $nome = $user_data['Nome'];
+      $preco = $user_data['preço'];
+     
+    }
+
   
-  
-  $nome = $_POST['nome'];
-  $preco= $_POST['preco'];
- 
-
-  $sql = "SELECT * FROM banco_de_dado_loja.produtos WHERE nome = '$nome'";
-  $result = $conexao->query($sql);
-  /* print_r($sql);
-  print_r($result); */
-
-if(mysqli_num_rows($result)<1){
-
-  
-
-$result =mysqli_query($conexao, "INSERT INTO produtos(nome,preco) 
-VALUES('$nome','$preco')");
-
-}else{
-  echo 'Produto Existe';
-
-}
+  }else{
+    echo 'id não encontrado';
+  }
 }
 
 ?>
@@ -39,28 +36,28 @@ VALUES('$nome','$preco')");
     <link rel="stylesheet" href="../ProjetoIDEV/css/Cadastro.css">
 </head>
 <body>
-  
+  <a href="consulta.php">VOLTAR</a>
 
   <div class="camada1">
     <div class="embaca" id="fundoEmbaca">
     <div class="container">
         <h2>Cadastro</h2>
         <br><br>
-        <form action="editConsulta.php" method="POST">
-         
-          <input type="text" placeholder="nome" id="nome" name="nome">
+        <form action="updateProd.php" method="POST">
+          <input type="text" placeholder="nome" id="Nome" name="Nome" class="inputUser" value="<?php echo $nome ?>">
           <br><br>
-          <input type="text" placeholder="preço" id="preco"  name="preco">
+          <input type="text" placeholder="preco" id="preço" name="preço" value="<?php echo $preco ?>">
+          <br><br>
           
-          <br><br>
-          <input type="submit" value="Cadastrar" id="submit" name="submited">
+          <input type="hidden" name="id" id="id" value="<?php echo $ID ?>">
+          <input type="submit" value="update" id="updateProd" name="updateProd">
         </form>
       
 
       </div>
       </div>
       </div>
-     
+    
 </body>
 
 </html>
